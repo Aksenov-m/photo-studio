@@ -1,0 +1,67 @@
+.info {
+  margin-top: 20px;
+}
+
+.info__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  /* text-indent: -1em; */
+}
+
+.info__list::before {
+  content: '🔸'; /* юникод точки */
+  font-weight: bold; /* Менять жирность */
+  display: inline-block; /* Расстояние между точкой и текстом */
+  width: 1em; /* Задать значение расстояния */
+  font-size: 15px;
+  padding-top: 16px;
+}
+
+.info__title {
+  font-size: 22px;
+}
+
+.info__subtitle {
+  margin-top: 5px;
+}
+
+.info__title-gift {
+  margin-top: 25px;
+}
+
+.info__nenu {
+  margin: 0;
+  padding: 0;
+}
+
+.info__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-top: 20px;
+  padding-left: 5px;
+  text-align: left;
+}
+
+.info__paragraph {
+  text-align: left;
+}
+
+.paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-top: 20px;
+}

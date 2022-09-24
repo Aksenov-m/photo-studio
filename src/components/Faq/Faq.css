@@ -1,0 +1,151 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.faq__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.faq__paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #c3c3c3;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.faq__title {
+  color: #f4f4f4;
+}
+
+.questions__information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(130, 130, 130);
+  padding-bottom: 5px;
+}
+
+.questions__button {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  /* border-bottom: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(130, 130, 130);
+  /* margin-bottom: 10px; */
+  /* padding-bottom: 3px; */
+}
+
+.questions__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #c3c3c3;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: left;
+}
+
+.questions__close {
+  transition: transform 0.15s;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.questions__close::before {
+  content: '\2b';
+  color: #c3c3c3;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+
+.questions__close_active {
+  transform: rotate(45deg);
+}
+
+.questions__paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #c3c3c3;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: left;
+}
+
+.questions__nenu {
+  list-style-type: none;
+  counter-reset: num;
+  margin: 0;
+  padding: 0;
+}
+
+.questions__list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 10px;
+  /* list-style: none; */
+}
+
+.questions__list::before {
+  content: counter(num) '.'; /* Добавляем к числам точку */
+  counter-increment: num; /* Задаём имя счетчика */
+  color: #c3c3c3; /* Менять цвет */
+  display: inline-block; /* Расстояние между точкой и текстом */
+  width: 1em; /* Задать значение расстояния */
+  font-size: 12px;
+  margin-top: 1px;
+  padding-right: 5px;
+}
+
+.order__list {
+  list-style: none;
+}
+
+.order__nenu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}

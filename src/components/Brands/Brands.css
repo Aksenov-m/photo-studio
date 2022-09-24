@@ -1,0 +1,135 @@
+.brands {
+  padding: 0;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brands__nenu {
+  list-style-type: none;
+  counter-reset: num;
+  margin: 0;
+  padding: 0;
+}
+
+.brands__list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* list-style: none; */
+}
+
+.brands__list::before {
+  content: counter(num) '.'; /* Добавляем к числам точку */
+  counter-increment: num; /* Задаём имя счетчика */
+  color: rgb(100%, 100%, 100%); /* Менять цвет */
+  display: inline-block; /* Расстояние между точкой и текстом */
+  width: 1em; /* Задать значение расстояния */
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.brands__paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.catalogs {
+  margin-top: 30px;
+}
+
+.catalog-service {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.catalog-service__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalog-service__title {
+  margin-top: 20px;
+}
+
+.catalog__nenu {
+  padding: 0;
+  margin: 0;
+}
+.catalog__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.catalog__list::before {
+  content: '*'; /* юникод точки */
+  color: rgb(100%, 100%, 100%); /* Менять цвет */
+  font-weight: bold; /* Менять жирность */
+  display: inline-block; /* Расстояние между точкой и текстом */
+  width: 1em; /* Задать значение расстояния */
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+.catalog__paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.package__price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.catalog-service__link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.catalog-service__arrow {
+  padding-left: 3px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.catalog-service__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}

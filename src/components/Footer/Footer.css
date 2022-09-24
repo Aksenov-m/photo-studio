@@ -1,0 +1,128 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 21px;
+}
+
+.footer__link {
+  transition: color 0.3s;
+  outline: 0;
+  text-decoration: none;
+  width: 100%;
+  background-size: 100%, contain;
+  background-image: url(../../images/VK_Compact_Logo.svg);
+  background-color: transparent;
+  display: flex;
+  align-self: flex-start;
+  background-size: cover;
+  background-size: 10px 10px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer__title {
+  width: 100%;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a0a0a0;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 21px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(232, 232, 232);
+}
+
+.footer__copyright {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a0a0a0;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  padding-top: 30px;
+}
+
+/* .footer__logo {
+  content: '';
+  background-size: 100%, contain;
+  background-image: url(../../images/VK_Compact_Logo.svg);
+} */
+
+/* .vk::before {
+  content: '';
+  background-size: 100%, contain;
+  background-image: url(../../images/VK_Compact_Logo.svg);
+} */
+
+@media screen and (min-width: 768px) {
+  .footer {
+    align-items: stretch;
+  }
+
+  .footer__list {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .footer__menu {
+    padding-top: 17px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer__title {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .footer__link {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .footer__copyright {
+    text-align: left;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    background-color: #fafafa;
+  }
+}

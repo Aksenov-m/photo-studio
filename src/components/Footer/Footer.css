@@ -4,32 +4,19 @@
   align-items: center;
   margin: 0 auto;
   flex-shrink: 0;
+  margin-bottom: 15px;
 }
 
 .footer__menu {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding-top: 21px;
 }
 
 .footer__link {
   transition: color 0.3s;
   outline: 0;
   text-decoration: none;
-  width: 100%;
-  background-size: 100%, contain;
-  background-image: url(../../images/VK_Compact_Logo.svg);
-  background-color: transparent;
-  display: flex;
-  align-self: flex-start;
-  background-size: cover;
-  background-size: 10px 10px;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 24px;
-  height: 24px;
 }
 
 .footer__list {
@@ -37,9 +24,9 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
 }
 
 .footer__title {
@@ -53,10 +40,6 @@
   margin: 0 auto;
   text-align: center;
   padding: 0;
-  padding-bottom: 21px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(232, 232, 232);
 }
 
 .footer__copyright {
@@ -68,20 +51,47 @@
   margin: 0 auto;
   text-align: center;
   padding: 0;
-  padding-top: 30px;
 }
 
-/* .footer__logo {
+.footer__logo::before {
   content: '';
   background-size: 100%, contain;
-  background-image: url(../../images/VK_Compact_Logo.svg);
-} */
+  background-color: transparent;
+  display: flex;
+  align-self: flex-start;
+  background-size: cover;
+  background-size: 24px 24px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
 
-/* .vk::before {
-  content: '';
-  background-size: 100%, contain;
+.vk::before {
   background-image: url(../../images/VK_Compact_Logo.svg);
-} */
+}
+
+.instagram::before {
+  background-image: url(../../images/icons8-instagram-48.svg);
+  background-size: 35px 35px;
+  border-radius: 20%;
+}
+
+.whatsapp::before {
+  background-image: url(../../images/logo-whatsapp.svg);
+}
+
+.telegram::before {
+  background-image: url(../../images/logo-telegram.svg);
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  margin-top: 10px;
+}
 
 @media screen and (min-width: 768px) {
   .footer {

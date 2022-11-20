@@ -8,7 +8,7 @@ function Brands() {
       <div className='order__photoshoot'>
         <p className='order__paragraph'>ЗАКАЗАТЬ ФОТОСЕССИЮ</p>
         <h2 className='order__title'>90% процентов успеха продажи вашей продукции качественно снятый контент</h2>
-        <button name='button' type='button' class='button__order'>
+        <button name='button' type='button' className='button__order'>
           Заказать
         </button>
         <img className='order__foto' src={foto} alt='Обложка журнала.'></img>

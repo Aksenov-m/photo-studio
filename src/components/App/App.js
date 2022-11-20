@@ -6,12 +6,28 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 function App() {
+
+  let bodyElement = document.getElementsByTagName('body')[0];
+
+    // Стейт, отвечающий за бургер
+    const [isBurgerOpen, setBurgerOpen] = useState(false);
+
+  function handleBurgeClick() {
+    setBurgerOpen(true);
+    bodyElement.classList.add("lock");
+  }
+
+  function closeBurger() {
+    setBurgerOpen(false);
+    bodyElement.classList.remove("lock");
+  }
+
+
   return (
-    <div className='App'>
+    <div className="App" >
       <div className='page__container'>
-        <Header />
+        <Header burgerOpen={isBurgerOpen} onBurger={handleBurgeClick} closeBurger={closeBurger}/>
         <Main />
-        {/* <Main burgerOpen={isBurgerOpen} onBurger={handleBurgeClick} closeBurger={closeBurger} /> */}
         <Footer />
       </div>
     </div>

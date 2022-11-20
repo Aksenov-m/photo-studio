@@ -10,3 +10,7 @@
   text-rendering: optimizeLegibility;
   height: 100%;
 }
+
+body.lock {
+  overflow: hidden;
+}

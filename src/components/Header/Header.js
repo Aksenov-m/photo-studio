@@ -5,6 +5,7 @@ import Navigation from "../Navigation/Navigation";
 import "./Header.css";
 
 function Header(props) {
+
   useEffect(() => {
     if (!props.burgerOpen) return;
     function handleEscClose(evt) {
@@ -18,7 +19,7 @@ function Header(props) {
 
   useEffect(() => {
     function handleClickClose(evt) {
-      if (evt.target.classList.contains("navigation__burger_opened")) {
+      if (evt.target.classList.contains("header__burger_active")) {
         props.closeBurger();
       }
     }
@@ -28,10 +29,13 @@ function Header(props) {
 
   return (
     <header className='header section page__header'>
-      <Link className='link' to='/'>
+      <Link className='header__link link' to='/'>
         <img className='header__logo' src={logo} alt='Логотип.' />
       </Link>
-      <button className={`header__button ${props.loggedIn ? "" : "header__button_disabled"}`} onClick={props.onBurger}></button>
+      <div className={`header__burger ${props.burgerOpen ? "header__burger_active" : ""}`} onClick={props.onBurger}>
+      <span onClick={props.onBurger}></span>
+      </div>
+      {/* <button className={`header__button ${props.loggedIn ? "" : "header__button_disabled"}`} onClick={props.onBurger}></button> */}
       <Navigation {...props} />
     </header>
   );

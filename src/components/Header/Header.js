@@ -15,7 +15,7 @@ function Header(props) {
     }
     document.addEventListener("keydown", handleEscClose);
     return () => document.removeEventListener("keydown", handleEscClose);
-  }, [props.burgerOpen, props.closeBurger]);
+  }, [props.closeBurger, props.burgerOpen, props]);
 
   useEffect(() => {
     function handleClickClose(evt) {
@@ -25,7 +25,8 @@ function Header(props) {
     }
     document.addEventListener("click", handleClickClose);
     return () => document.removeEventListener("click", handleClickClose);
-  }, [props.burgerOpen, props.closeBurger]);
+  }, [props, props.closeBurger]);
+
 
   return (
     <header className='header section page__header'>

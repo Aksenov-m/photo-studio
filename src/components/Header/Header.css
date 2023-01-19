@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  z-index: 3;
+  z-index: 300;
   position: fixed;
   left: 0;
   top: 0;
@@ -22,7 +22,7 @@
   left: 0;
   top: 0;
   background-color: #5e5373;
-  z-index: 3;
+  z-index: 300;
 }
 
 .header__logo {
@@ -83,7 +83,7 @@
   width: 20px;
   height: 20px;
   position: relative;
-  z-index: 3;
+  z-index: 300;
 }
 
 .header__burger::before,
@@ -130,7 +130,7 @@
 }
 
 .header__link {
-  z-index: 3;
+  z-index: 300;
 }
 @media (min-width: 768px) {
   .header {

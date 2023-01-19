@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "./Footer.css";
 
 function Footer() {
@@ -8,24 +8,24 @@ function Footer() {
       <nav className='footer__menu'>
         <ul className='footer__list'>
           <li>
-            <Link className='footer__link' href='https://vk.com/aloynaaksenova' target='_blank'>
+            <a className='footer__link' href='https://vk.com/aloynaaksenova' target='_blank' rel="noreferrer">
               <i className='footer__logo vk'></i>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className='footer__link' href='https://www.instagram.com/aloynaaksenova' target='_blank'>
+            <a className='footer__link' href='https://www.instagram.com/aloynaaksenova' target='_blank' rel="noreferrer">
               <i className='footer__logo instagram'></i>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className='footer__link' href='whatsapp://send?phone=79269401035/' target='_blank'>
+            <a className='footer__link' href='whatsapp://send?phone=79269401035/' target='_blank' rel="noreferrer">
               <i className='footer__logo whatsapp'></i>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className='footer__link' href='http://t.me/Aloyna_Aksenova' target='_blank'>
+            <a className='footer__link' href='http://t.me/Aloyna_Aksenova' target='_blank' rel="noreferrer">
               <i className='footer__logo telegram'></i>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

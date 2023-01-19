@@ -21,7 +21,7 @@ function Questions(props) {
 
   return (
     <div className='questions' onClick={handleToggle}>
-      <div class='link questions__button'>
+      <div className='link questions__button'>
         <h3 className='questions__title'>{props.title}</h3>
         <i className={`questions__close ${isOpen ? "questions__close_active" : ""}`}>
         </i>

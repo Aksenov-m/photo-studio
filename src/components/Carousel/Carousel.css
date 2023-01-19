@@ -1,0 +1,34 @@
+.all-pages-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  height: 100%;
+  transition: transform 750ms ease 1ms;
+  /* transition: translate;
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out; */
+}
+
+.carousel__button {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.prev {
+  left: -100%;
+  width: 150%;
+}
+
+.next {
+  right: -100%;
+  width: 150%;
+}

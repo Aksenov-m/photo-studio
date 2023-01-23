@@ -14,7 +14,7 @@ function PackageService(props) {
       </div>
       <div className='package__price'>
         <p className='subtitle services__subtitle'>{props.subtitle3}</p>
-        <span className='price'>{props.price}</span>
+        <span className='value'>{props.price}</span>
         <p className='subtitle services__subtitle'>{props.subtitle4}</p>
       </div>
     </article>

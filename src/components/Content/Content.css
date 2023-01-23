@@ -24,19 +24,23 @@
   padding-right: 14px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  /* .grid {
+    display: grid;
+    grid-template-columns: 100px 100px 150px;
+    grid-template-rows: 150px 150px 100px;
+  } */
+
+  .content {
+    margin-bottom: 30px;
+    margin-top: 131px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .content__section {
     padding-left: 30px;
     padding-right: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .content {
-    margin-bottom: 109px;
-    margin-top: 38px;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .content__movies {

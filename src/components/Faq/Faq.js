@@ -9,6 +9,7 @@ function Brands() {
         <p className='faq__paragraph'>FAQ</p>
         <h2 className='title faq__title'>Отвечаю на ваши вопросы</h2>
       </div>
+      <div className='query'>
       <Questions title='Полезная информация'>
         <div className='questions__information'>
           <p className='questions__paragraph'>Пожалуйста, прочитайте перед бронированием съемки</p>
@@ -83,6 +84,7 @@ function Brands() {
           </p>
         </div>
       </Questions>
+      </div>
     </section>
   );
 }

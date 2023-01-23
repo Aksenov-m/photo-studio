@@ -28,7 +28,7 @@ function Brands() {
           </li>
         </ol>
       </div>
-      <div className='grid catalogs'>
+      <div className='catalogs'>
         <>
           <Catalog
             foto={foto1}
@@ -58,7 +58,7 @@ function Brands() {
           </Catalog>
           <Catalog
             foto={foto2}
-            title='Fashion editorial'
+            title='Fashion&nbsp;editorial'
             link='https://#'
             isCatalog={false}
           >

@@ -31,7 +31,7 @@ function Footer() {
       </nav>
       <div className="footer__text">
         <h3 className='footer__title'>Aloyna_Aksenova</h3>
-        <p className='footer__copyright'>&copy;2022</p>
+        <p className='footer__copyright'>&copy;2023</p>
       </div>
     </footer>
   );

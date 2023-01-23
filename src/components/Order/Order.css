@@ -118,3 +118,19 @@
   line-height: 16px;
   text-decoration: none;
 }
+
+@media (min-width: 768px) {
+  .order__title {
+    width: 75%;
+  }
+
+  .order__price {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .order__title {
+    width: 55%;
+  }
+}

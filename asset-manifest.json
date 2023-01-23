@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photo-studio/static/css/main.a4cacd1c.css",
-    "main.js": "/photo-studio/static/js/main.90991a57.js",
+    "main.css": "/photo-studio/static/css/main.e2c73683.css",
+    "main.js": "/photo-studio/static/js/main.eeb4d5a5.js",
     "static/js/787.4d230e06.chunk.js": "/photo-studio/static/js/787.4d230e06.chunk.js",
     "static/media/services.jpg": "/photo-studio/static/media/services.9e4d822928757199c371.jpg",
     "static/media/package1.jpg": "/photo-studio/static/media/package1.ea518ae6c81e811cca45.jpg",
@@ -20,12 +20,12 @@
     "static/media/logo-telegram.svg": "/photo-studio/static/media/logo-telegram.b0589b5e724dd92cc132.svg",
     "static/media/VK_Compact_Logo.svg": "/photo-studio/static/media/VK_Compact_Logo.d170476266ce091d43fc.svg",
     "index.html": "/photo-studio/index.html",
-    "main.a4cacd1c.css.map": "/photo-studio/static/css/main.a4cacd1c.css.map",
-    "main.90991a57.js.map": "/photo-studio/static/js/main.90991a57.js.map",
+    "main.e2c73683.css.map": "/photo-studio/static/css/main.e2c73683.css.map",
+    "main.eeb4d5a5.js.map": "/photo-studio/static/js/main.eeb4d5a5.js.map",
     "787.4d230e06.chunk.js.map": "/photo-studio/static/js/787.4d230e06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4cacd1c.css",
-    "static/js/main.90991a57.js"
+    "static/css/main.e2c73683.css",
+    "static/js/main.eeb4d5a5.js"
   ]
 }

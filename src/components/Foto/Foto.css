@@ -1,33 +1,84 @@
 .foto {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+  max-width: 1280px;
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center; */
+  /* gap: 5px; */
   /* padding: 0; */
   margin: 0 auto;
-  overflow: hidden;
   /* max-width: 292px;
   min-width: 292px; */
+  transition: height 0.3s;
+  max-height: 850px;
+}
+
+.foto__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 2s, visibility 0s 2s, z-index 0s 2s;
+  opacity: 0;
+  /* cursor: pointer; */
+}
+
+.active {
+  visibility: visible;
+  z-index: 100;
+  transition: opacity 2s, visibility 0s, z-index 0s;
+  opacity: 1;
 }
 
 .foto__image {
+  position: relative;
+  max-width: none;
   width: 100%;
   /* max-width: 292px;
   min-width: 292px; */
   height: 100%;
   object-fit: cover;
   padding: 0;
-  padding-right: 28px;
+  /* padding-right: 28px; */
   margin: 0;
+  flex-shrink: 0;
+  max-width: 1280px;
 }
 
-.foto__image:last-of-type {
+/* .foto::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.35);
+} */
+
+/* .foto__image:last-of-type {
   padding-right: 0;
+} */
+
+.loading {
+  filter: blur(10px);
 }
 
-@media (min-width: 768px) {
+.loaded {
+  filter: blur(0);
+  transition: filter 0.3s linear;
+}
+
+@media (min-width: 1281px) {
   .foto__image {
-    padding-right: 60px;
+    object-fit: contain;
   }
 }

@@ -22,10 +22,10 @@ function Main(props) {
       {/* <main className='content'> */}
         <Foto {...props} />
         <AboutMe />
+        <Order />
         <Services />
         <Info />
         <Brands />
-        <Order />
         <Faq />
       </main>
     </>

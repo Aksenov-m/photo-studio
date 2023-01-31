@@ -6,6 +6,7 @@ import "./Header.css";
 
 function Header(props) {
 
+
   useEffect(() => {
     if (!props.burgerOpen) return;
     function handleEscClose(evt) {
@@ -15,17 +16,18 @@ function Header(props) {
     }
     document.addEventListener("keydown", handleEscClose);
     return () => document.removeEventListener("keydown", handleEscClose);
-  }, [props.closeBurger, props.burgerOpen, props]);
+  }, [props.closeBurger, props.burgerOpen, props, props.onBurger]);
 
-  useEffect(() => {
-    function handleClickClose(evt) {
-      if (evt.target.classList.contains("header__burger_active")) {
-        props.closeBurger();
-      }
-    }
-    document.addEventListener("click", handleClickClose);
-    return () => document.removeEventListener("click", handleClickClose);
-  }, [props, props.closeBurger]);
+  // useEffect(() => {
+  //   function handleClickOpen(evt) {
+  //     // const currentElement = evt.target.tagName.toLowerCase() === "span" ? evt.target.parentNode.parentElement : evt.target.parentElement;
+  //     if (evt.target.classList.contains("header__burger")) {
+  //       props.openBurger();
+  //     }
+  //   }
+  //   document.addEventListener("click", handleClickOpen);
+  //   return () => document.removeEventListener("click", handleClickOpen);
+  // }, [props, props.openBurger, props.burgerOpen, props.onBurger]);
 
 
   return (
@@ -33,10 +35,9 @@ function Header(props) {
       <Link className='header__link link' to='/'>
         <img className='header__logo' src={logo} alt='Логотип.' />
       </Link>
-      <div className={`header__burger ${props.burgerOpen ? "header__burger_active" : ""}`} onClick={props.onBurger}>
-      <span onClick={props.onBurger}></span>
+      <div className={`header__burger ${props.burgerOpen ? "header__burger_active" : ""}`}onClick={props.onBurger}>
+      <span ></span>
       </div>
-      {/* <button className={`header__button ${props.loggedIn ? "" : "header__button_disabled"}`} onClick={props.onBurger}></button> */}
       <Navigation {...props} />
     </header>
   );

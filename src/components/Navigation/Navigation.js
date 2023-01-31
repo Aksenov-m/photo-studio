@@ -9,12 +9,12 @@ const Navigation = (props) => {
       <nav className={`navigation ${props.burgerOpen ? "navigation__burger_opened" : ""}`}>
         <ul className='navigation__nenu'>
           <li className='navigation__list'>
-            <NavLink exact={true} to='/' className='navigation__link link' activeClassName='navigation__link_active' onClick={props.closeBurger}>
+            <Link exact="true" to='app' className='navigation__link link' activeclassname='navigation__link_active' onClick={props.closeBurger}>
               ГЛАВНАЯ
-            </NavLink>
+            </Link>
           </li>
           <li className='navigation__list'>
-            <NavLink to='/portfolio' exact={true} className='navigation__link link' activeClassName='navigation__link_active' onClick={props.closeBurger}>
+            <NavLink to='/portfolio' exact="true" className='navigation__link link' activeclassname='navigation__link_active' onClick={props.closeBurger}>
               ПОРТФОЛИО
             </NavLink>
           </li>
@@ -34,12 +34,12 @@ const Navigation = (props) => {
             </Link>
           </li>
           <li className='navigation__list'>
-            <NavLink to='/comment' className='navigation__link link' activeClassName='navigation__link_active' onClick={props.closeBurger}>
+            <NavLink to='/comment' className='navigation__link link' activeclassname='navigation__link_active' onClick={props.closeBurger}>
               ОТЗЫВЫ
             </NavLink>
           </li>
           <li className='navigation__list'>
-            <NavLink to='/contacts' className='navigation__link link' activeClassName='navigation__link_active' onClick={props.closeBurger}>
+            <NavLink to='/contacts' className='navigation__link link' activeclassname='navigation__link_active' onClick={props.closeBurger}>
               КОНТАКТЫ
             </NavLink>
           </li>

@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0 auto;
   margin-top: 20px;
+  max-width: 1280px;
+  width: 100%;
 }
 
 .about-me__title {
@@ -38,15 +41,46 @@
   margin: 0;
   padding: 0;
   border: 0;
-  margin-top: 20px;
   text-align: left;
 }
 
 .about-me__list {
   list-style: none;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .about-me__nenu {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .about-me {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 100px;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .about-me__title {
+    text-align: start;
+  }
+
+  .about-me__nenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .about-me__list:first-child {
+    margin-top: 0;
+  }
 }

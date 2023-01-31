@@ -9,9 +9,9 @@
   align-items: center;
   padding-top: 10px;
   padding-bottom: 0;
-  padding-left: 14px;
-  padding-right: 14px;
-  height: 55px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 70px;
   box-sizing: border-box;
 }
 
@@ -35,8 +35,8 @@
 .header__burger {
   display: block;
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 37px;
+  height: 30px;
   position: relative;
   z-index: 300;
 }
@@ -47,8 +47,9 @@
   background-color: #fff;
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 3px;
   transition: all 0.3s ease 0s;
+  border-radius: 10px;
 }
 
 .header__burger::before {
@@ -65,19 +66,20 @@
   position: absolute;
   left: 0;
   width: 100%;
-  height: 2px;
-  top: 9px;
+  height: 3px;
+  top: 13px;
   transition: all 0.3s ease 0s;
+  border-radius: 10px;
 }
 
 .header__burger_active::before {
   transform: rotate(45deg);
-  top: 9px;
+  top: 13.5px;
 }
 
 .header__burger_active::after {
   transform: rotate(-45deg);
-  bottom: 9px;
+  bottom: 13.5px;
 }
 
 .header__burger_active span {

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import logo from "../../images/logo.jpg";
-import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 import Navigation from "../Navigation/Navigation";
 import "./Header.css";
 
@@ -32,8 +31,8 @@ function Header(props) {
 
   return (
     <header className='header section page__header'>
-      <Link className='header__link link' to='/'>
-        <img className='header__logo' src={logo} alt='Логотип.' />
+      <Link className='header__link link' to='app'>
+        <span className='header__logo link'>Fashion photographer Aloyna Aksenova</span>
       </Link>
       <div className={`header__burger ${props.burgerOpen ? "header__burger_active" : ""}`}onClick={props.onBurger}>
       <span ></span>

@@ -27,9 +27,15 @@
 }
 
 .header__logo {
-  max-width: 50px;
-  max-height: 100%;
-  overflow: hidden;
+  font-family: 'Italianno', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header__burger {
@@ -87,6 +93,7 @@
 }
 
 .header__link {
+  max-width: 115px;
   z-index: 300;
 }
 
@@ -105,14 +112,25 @@
   }
 
   .header__logo {
-    max-width: 137px;
-    max-height: 80px;
-    overflow: hidden;
+    font-size: 25px;
+  }
+
+  .header__link {
+    max-width: 150px;
   }
 }
 
 @media (min-width: 1280px) {
   .header {
-    padding: 24px 4%;
+    height: 150px;
+    padding-top: 24px;
+  }
+
+  .header__logo {
+    font-size: 50px;
+  }
+
+  .header__link {
+    max-width: 300px;
   }
 }

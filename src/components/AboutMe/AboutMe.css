@@ -72,6 +72,7 @@
 
   .about-me__title {
     text-align: start;
+    white-space: nowrap;
   }
 
   .about-me__nenu {

@@ -53,8 +53,8 @@
   padding: 0;
 }
 
-.footer__logo::before {
-  content: '';
+.footer__logo {
+  color: #928763;
   background-size: 100%, contain;
   background-color: transparent;
   display: flex;

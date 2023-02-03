@@ -4,6 +4,8 @@
   align-items: center;
   margin: 0 auto;
   margin-top: 15px;
+  width: 100%;
+  max-width: 1280px;
 }
 
 .query {
@@ -37,7 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 auto;
+  margin: 0;
   margin-top: 7px;
 }
 
@@ -45,7 +47,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   margin-top: 10px;
   border-bottom: 1px;
@@ -154,6 +156,14 @@
   margin-top: 10px;
 }
 
+.questions__information:last-child {
+  margin-bottom: 10px;
+}
+
+.order__nenu:last-child {
+  margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
   .faq {
     width: 100%;
@@ -174,5 +184,17 @@
 
   .faq__title {
     text-align: left;
+  }
+
+  .faq__paragraph {
+    margin-bottom: 10px;
+  }
+
+  .questions__title {
+    font-size: 14px;
+  }
+
+  .questions__paragraph {
+    font-size: 14px;
   }
 }

@@ -135,7 +135,6 @@ useEffect(() => {
         <ButtonLink href='#app' Class={`scroll-to-top ${scrollPosition >= 120 && size > 770 ? "scroll-to-top_active" : ""}`}>
           <FontAwesomeIcon icon={faCircleArrowUp} className='button__scroll-to-top' />
         </ButtonLink>
-
       </div>
     </div>
   );

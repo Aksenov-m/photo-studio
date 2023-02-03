@@ -19,7 +19,6 @@ function Main(props) {
   return (
     <>
       <main className='content' ref={mainRef}>
-      {/* <main className='content'> */}
         <Foto {...props} />
         <AboutMe />
         <Order />

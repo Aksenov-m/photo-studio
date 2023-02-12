@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/photo-studio/static/css/main.c86663cd.css",
-    "main.js": "/photo-studio/static/js/main.685c2f65.js",
+    "main.css": "/photo-studio/static/css/main.264d8dc6.css",
+    "main.js": "/photo-studio/static/js/main.b54d2a4f.js",
     "static/js/787.4d230e06.chunk.js": "/photo-studio/static/js/787.4d230e06.chunk.js",
     "static/media/services.jpg": "/photo-studio/static/media/services.9e4d822928757199c371.jpg",
     "static/media/package1.jpg": "/photo-studio/static/media/package1.ea518ae6c81e811cca45.jpg",
@@ -14,17 +14,13 @@
     "static/media/Brand2.jpg": "/photo-studio/static/media/Brand2.47025ced249b0998b4af.jpg",
     "static/media/Brand1.jpg": "/photo-studio/static/media/Brand1.d098c39fffc6b8dfa1d8.jpg",
     "static/media/Brand3.jpg": "/photo-studio/static/media/Brand3.3b3e1d76791ad5ed5cb0.jpg",
-    "static/media/logo-whatsapp.svg": "/photo-studio/static/media/logo-whatsapp.7dc3f3267bee9b39fd8d.svg",
-    "static/media/icons8-instagram-48.svg": "/photo-studio/static/media/icons8-instagram-48.8ff7ce92ad753b591ed4.svg",
-    "static/media/logo-telegram.svg": "/photo-studio/static/media/logo-telegram.b0589b5e724dd92cc132.svg",
-    "static/media/VK_Compact_Logo.svg": "/photo-studio/static/media/VK_Compact_Logo.d170476266ce091d43fc.svg",
     "index.html": "/photo-studio/index.html",
-    "main.c86663cd.css.map": "/photo-studio/static/css/main.c86663cd.css.map",
-    "main.685c2f65.js.map": "/photo-studio/static/js/main.685c2f65.js.map",
+    "main.264d8dc6.css.map": "/photo-studio/static/css/main.264d8dc6.css.map",
+    "main.b54d2a4f.js.map": "/photo-studio/static/js/main.b54d2a4f.js.map",
     "787.4d230e06.chunk.js.map": "/photo-studio/static/js/787.4d230e06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c86663cd.css",
-    "static/js/main.685c2f65.js"
+    "static/css/main.264d8dc6.css",
+    "static/js/main.b54d2a4f.js"
   ]
 }

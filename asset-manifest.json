@@ -1,9 +1,14 @@
 {
   "files": {
-    "main.css": "/photo-studio/static/css/main.264d8dc6.css",
-    "main.js": "/photo-studio/static/js/main.b54d2a4f.js",
+    "main.css": "/photo-studio/static/css/main.d5c68e4f.css",
+    "main.js": "/photo-studio/static/js/main.f5e70a4f.js",
     "static/js/787.4d230e06.chunk.js": "/photo-studio/static/js/787.4d230e06.chunk.js",
+    "static/media/MobJournal.jpeg": "/photo-studio/static/media/MobJournal.02b941a534563fbc5859.jpeg",
     "static/media/services.jpg": "/photo-studio/static/media/services.9e4d822928757199c371.jpg",
+    "static/media/Bazar.jpg": "/photo-studio/static/media/Bazar.c6dcb84c0c2ffe6dfde7.jpg",
+    "static/media/Marika.jpeg": "/photo-studio/static/media/Marika.1de7114605d585a8361a.jpeg",
+    "static/media/Horizont.jpeg": "/photo-studio/static/media/Horizont.2e204a26a41f36cf6135.jpeg",
+    "static/media/Malvie.jpg": "/photo-studio/static/media/Malvie.a5c298013198e41c7022.jpg",
     "static/media/package1.jpg": "/photo-studio/static/media/package1.ea518ae6c81e811cca45.jpg",
     "static/media/Inter-Medium.woff": "/photo-studio/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
     "static/media/package2.jpg": "/photo-studio/static/media/package2.5fc563520a3c924e18c8.jpg",
@@ -15,12 +20,12 @@
     "static/media/Brand1.jpg": "/photo-studio/static/media/Brand1.d098c39fffc6b8dfa1d8.jpg",
     "static/media/Brand3.jpg": "/photo-studio/static/media/Brand3.3b3e1d76791ad5ed5cb0.jpg",
     "index.html": "/photo-studio/index.html",
-    "main.264d8dc6.css.map": "/photo-studio/static/css/main.264d8dc6.css.map",
-    "main.b54d2a4f.js.map": "/photo-studio/static/js/main.b54d2a4f.js.map",
+    "main.d5c68e4f.css.map": "/photo-studio/static/css/main.d5c68e4f.css.map",
+    "main.f5e70a4f.js.map": "/photo-studio/static/js/main.f5e70a4f.js.map",
     "787.4d230e06.chunk.js.map": "/photo-studio/static/js/787.4d230e06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.264d8dc6.css",
-    "static/js/main.b54d2a4f.js"
+    "static/css/main.d5c68e4f.css",
+    "static/js/main.f5e70a4f.js"
   ]
 }

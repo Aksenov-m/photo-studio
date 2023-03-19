@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/photo-studio/static/css/main.3951d6a4.css",
+    "main.css": "/photo-studio/static/css/main.a9624166.css",
     "main.js": "/photo-studio/static/js/main.3ff2f2ce.js",
     "static/js/787.4d230e06.chunk.js": "/photo-studio/static/js/787.4d230e06.chunk.js",
     "static/media/MobJournal.jpeg": "/photo-studio/static/media/MobJournal.02b941a534563fbc5859.jpeg",
@@ -21,12 +21,12 @@
     "static/media/Brand1.jpg": "/photo-studio/static/media/Brand1.d098c39fffc6b8dfa1d8.jpg",
     "static/media/Brand3.jpg": "/photo-studio/static/media/Brand3.3b3e1d76791ad5ed5cb0.jpg",
     "index.html": "/photo-studio/index.html",
-    "main.3951d6a4.css.map": "/photo-studio/static/css/main.3951d6a4.css.map",
+    "main.a9624166.css.map": "/photo-studio/static/css/main.a9624166.css.map",
     "main.3ff2f2ce.js.map": "/photo-studio/static/js/main.3ff2f2ce.js.map",
     "787.4d230e06.chunk.js.map": "/photo-studio/static/js/787.4d230e06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3951d6a4.css",
+    "static/css/main.a9624166.css",
     "static/js/main.3ff2f2ce.js"
   ]
 }

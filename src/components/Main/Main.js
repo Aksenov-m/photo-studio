@@ -10,21 +10,21 @@ import Faq from "../Faq/Faq";
 
 // Функциональный компонент Main
 function Main(props) {
-  const mainRef = useRef();
+  // const mainRef = useRef();
 
-  useEffect(() => {
-    console.log("mainRef", mainRef.current);
-  }, []);
+  // useEffect(() => {
+  //   console.log("mainRef", mainRef.current);
+  // }, []);
 
   return (
     <>
-      <main className='content' ref={mainRef}>
+      <main className='content'>
         <Foto {...props} />
         <AboutMe />
         <Order />
         <Services />
         <Info />
-        <Brands />
+        <Brands {...props}/>
         <Faq />
       </main>
     </>

@@ -9,27 +9,27 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className='footer section page__footer'>
+    <footer className='footer section page__footer' id={'footer'}>
       <nav className='footer__menu'>
         <ul className='footer__list'>
           <li>
-            <a className='footer__link' href='https://vk.com/aloynaaksenova' target='_blank' rel="noreferrer">
-            <FontAwesomeIcon icon={faVk} className='footer__logo vk' />
+            <a className='footer__link' href='https://vk.com/fashionphotoshoot1' target='_blank' rel="noreferrer">
+            <FontAwesomeIcon icon={faVk} className='logo footer__logo vk fa-xl link' />
             </a>
           </li>
           <li>
             <a className='footer__link' href='https://www.instagram.com/aloynaaksenova' target='_blank' rel="noreferrer">
-            <FontAwesomeIcon icon={faInstagram} className='footer__logo instagram' />
+            <FontAwesomeIcon icon={faInstagram} className='logo footer__logo instagram fa-xl link' />
             </a>
           </li>
           <li>
-            <a className='footer__link' href='whatsapp://send?phone=79269401035/' target='_blank' rel="noreferrer">
-            <FontAwesomeIcon icon={faWhatsapp} className='footer__logo whatsapp' />
+            <a className='footer__link' href='https://wa.me/79269401035' target='_blank' rel="noreferrer">
+            <FontAwesomeIcon icon={faWhatsapp} className='logo footer__logo whatsapp fa-xl link' />
             </a>
           </li>
           <li>
             <a className='footer__link' href='http://t.me/Aloyna_Aksenova' target='_blank' rel="noreferrer">
-            <FontAwesomeIcon icon={faTelegram} className='footer__logo telegram' />
+            <FontAwesomeIcon icon={faTelegram} className='logo footer__logo telegram fa-xl link' />
             </a>
           </li>
         </ul>

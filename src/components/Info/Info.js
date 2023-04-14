@@ -5,7 +5,7 @@ function Info() {
   return (
     <section id='info' className='info section content__section'>
         <h3 className='title info__title'>Усиливаю вашу уверенность в себе</h3>
-        <p className="subtitle info__subtitle">Мы делаем фотографии чтобы можно было вернуться в тот самый момент и проживать снова и снова его!</p>
+        <p className="subtitle info__subtitle">Я делаю фотографии чтобы можно было вернуться в тот самый момент и проживать снова и снова его!</p>
         <h2 className="title info__title-gift">Подарочный сертификат</h2>
         <p className='paragraph'>Кому стоит подарить фотосессию:</p>
       <nav>

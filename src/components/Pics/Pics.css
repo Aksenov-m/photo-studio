@@ -1,0 +1,20 @@
+.pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.pics:last-of-type {
+  margin-bottom: 0;
+}
+
+.pics:hover {
+  filter: opacity(0.9);
+}
+
+@media (min-width: 768px) {
+  .pics {
+    margin-bottom: 10px;
+  }
+}

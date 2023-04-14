@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Catalog.css";
+import { configPath } from "../../utils/utils";
 
 // Функциональный компонент packageService
 function Catalog(props) {
@@ -9,9 +12,9 @@ function Catalog(props) {
       {props.children}
       {props.isCatalog ? <p className='subtitle catalog-service__subtitle'>{props.subtitle2}</p> : <></>}
       <div className='catalog-service__price'>
-        <a className='catalog-service__link link' href={props.link} target='_blank' rel='noreferrer'>
+        <Link className='catalog-service__link link' to={`/Portfolio/${configPath.brands.path}/${props.to}`} onClick={()=> props.pathClick(props.to)}>
           Смотреть
-        </a>
+        </Link>
         <p className='catalog-service__arrow'>→</p>
       </div>
     </article>

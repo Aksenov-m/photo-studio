@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { NavLink } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
 import "./Header.css";
 
@@ -31,9 +31,9 @@ function Header(props) {
 
   return (
     <header className='header section page__header'>
-      <Link className='header__link link' to='app'>
+      <NavLink className='header__link link' to='/'>
         <span className='header__logo link'>Fashion photographer Aloyna Aksenova</span>
-      </Link>
+      </NavLink>
       <div className={`header__burger ${props.burgerOpen ? "header__burger_active" : ""}`}onClick={props.onBurger}>
       <span ></span>
       </div>

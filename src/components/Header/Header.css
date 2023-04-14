@@ -95,6 +95,7 @@
 .header__link {
   max-width: 115px;
   z-index: 300;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -116,7 +117,7 @@
   }
 
   .header__link {
-    max-width: 150px;
+    max-width: 170px;
   }
 }
 
@@ -131,6 +132,6 @@
   }
 
   .header__link {
-    max-width: 300px;
+    max-width: 360px;
   }
 }

@@ -7,11 +7,10 @@
   display: none;
   position: fixed;
   z-index: 100;
-  top: 10%;
+  top: 70%;
   right: 5px;
   flex-direction: column;
   justify-content: flex-end;
-  height: 71%;
 }
 
 .scroll-to-top_active {

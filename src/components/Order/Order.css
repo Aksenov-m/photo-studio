@@ -33,8 +33,7 @@
   height: auto;
   margin: 0;
   padding: 10px 25px;
-  overflow: hidden;
-  border: 1px solid #928765;
+  border: none;
   border-radius: 100px;
   outline: none;
   background: #928765;
@@ -128,6 +127,7 @@
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

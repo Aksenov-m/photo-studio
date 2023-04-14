@@ -8,6 +8,12 @@
   max-width: 1280px;
 }
 
+.brands__subtitle {
+  align-items: center;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
 .brands__nenu {
   list-style-type: none;
   counter-reset: num;
@@ -137,6 +143,9 @@
   margin: 0;
   margin-top: 20px;
 }
+.catalog-service__subtitle {
+  text-align: left;
+}
 
 @media (min-width: 768px) {
   .catalogs {
@@ -144,6 +153,10 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+  }
+
+  .brands__subtitle {
+    font-size: 36px;
   }
 
   .catalog-service {

@@ -5,8 +5,8 @@ function AboutMe() {
   return (
     <section id='about-me' className='about-me section content__section'>
       <div className='about'>
-        <h2 className='about-me__title'>Алена Аксенова</h2>
-        <p className="about-me__subtitle">Я фотограф из Москвы</p>
+        <h2 className='about-me__title'>Фотограф</h2>
+        <p className="about-me__subtitle">Меня зовут Алена Аксенова, я fashion-фотограф  из Москвы</p>
       </div>
       <nav>
         <ul className='about-me__nenu'>

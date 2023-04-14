@@ -4,14 +4,14 @@ import foto1 from "../../images/Brand1.jpg";
 import foto2 from "../../images/Brand2.jpg";
 import foto3 from "../../images/Brand3.jpg";
 import Catalog from "../Catalog/Catalog";
+import { configPath } from "../../utils/utils";
 
-function Brands() {
+function Brands(props) {
   return (
     <section id='brands' className='brands section content__section'>
       <div className='brands__info'>
-        <h1 className='title brands__title'>
-          БРЕНДАМ Каталог&nbsp;для интернет-&nbsp;магазина
-        </h1>
+        <h1 className='title brands__title'>БРЕНДАМ</h1>
+        <h2 className='subtitle brands__subtitle'>Каталог&nbsp;для интернет-магазина</h2>
         <ol className='brands__nenu'>
           <li className='brands__list'>
             <p className='brands__paragraph'>
@@ -31,12 +31,13 @@ function Brands() {
       <div className='catalogs'>
         <>
           <Catalog
+            pathClick={props.pathClick}
             foto={foto1}
             title='Catalog'
             subtitle1='Почему мой каталог принесет вам хорошие продажи?'
             subtitle2='К уникальному предложению также предлагаю помощь 
             в подборе профессиональных визажистов, стилистов, моделей и студии.'
-            link='https://#'
+            to={configPath.brands.catalog}
             isCatalog={true}
           >
             <ul className='catalog__nenu'>
@@ -56,23 +57,13 @@ function Brands() {
               </li>
             </ul>
           </Catalog>
-          <Catalog
-            foto={foto2}
-            title='Fashion&nbsp;editorial'
-            link='https://#'
-            isCatalog={false}
-          >
+          <Catalog pathClick={props.pathClick} foto={foto2} title='Fashion&nbsp;editorial' to={configPath.brands.fashionEditorial} isCatalog={false}>
             <p className='catalog__paragraph'>
               Каждая имиджевая съемка обсуждается отдельно и стоимость варьируется в зависимости от технического задания, для более подробного расчета
               необходимо составление брифа и личная консультация
             </p>
           </Catalog>
-          <Catalog
-            foto={foto3}
-            title='Studio+Street'
-            link='https://#'
-            isCatalog={false}
-          >
+          <Catalog pathClick={props.pathClick} foto={foto3} title='Studio+Street' to={configPath.brands.studioStreet} isCatalog={false}>
             <ul className='catalog__nenu'>
               <li className='catalog__list'>
                 <p className='catalog__paragraph'>Онлайн-консультация для составления индивидуального предложения.</p>

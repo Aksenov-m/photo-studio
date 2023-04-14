@@ -19,6 +19,7 @@
   transition: visibility 0.5s, opacity 0.5s linear; */
   transition: all 0.3s ease 0s;
   overflow: auto;
+  overflow: visible;
 }
 
 .navigation__burger_opened {
@@ -71,9 +72,16 @@
 }
 
 .navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.navigation__list_relative {
+  position: relative;
 }
 
 .navigation__link {
@@ -89,7 +97,7 @@
 
 .navigation__link_active {
   width: 100%;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   border-bottom: 2px;
   border-bottom-style: solid;
   border-color: #ffffff;
@@ -101,6 +109,91 @@
   line-height: 16px;
   background-color: #f9f9f9;
   border-radius: 20px;
+}
+
+.submenu {
+  transition: all 1s ease 0s;
+  display: none;
+  opacity: 0;
+  /* overflow: hidden; */
+  visibility: hidden;
+}
+
+.submenu_active {
+  animation: flexUprise 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes flexUprise {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+/* @keyframes flexDel {
+  0% {
+    display: flex;
+    opacity: 1;
+  }
+
+  1% {
+    display: flex;
+    opacity: 1;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+} */
+
+.submenu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navigation__list_relative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submenu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fa-icon {
+  color: #ffffff;
+  padding-left: 3px;
+}
+
+.fa-rotate-180 {
+  padding-left: 0;
+  padding-right: 3px;
 }
 
 @media (min-width: 768px) {
@@ -119,8 +212,10 @@
   }
 
   .navigation__nenu {
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: flex-start;
   }
 
   .navigation__nenu {
@@ -131,10 +226,32 @@
     font-size: 13px;
     line-height: 18px;
   }
+
+  .submenu {
+    padding-top: 20px;
+    z-index: 10;
+    position: fixed;
+    top: 70px;
+  }
+
+  .submenu-list {
+    background-color: #000000;
+    box-shadow: 0 2px 5px 2px #c3c3c354;
+    border-radius: 5px;
+    padding: 15px;
+  }
+
+  .menu-item {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 1280px) {
   .navigation__nenu {
     gap: 16px;
+  }
+
+  .submenu {
+    padding-top: 35px;
   }
 }

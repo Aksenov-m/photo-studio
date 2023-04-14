@@ -1,0 +1,49 @@
+.portfolio {
+  flex: 1;
+  margin: 0 auto;
+  margin-top: 85px;
+  margin-bottom: 10px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.portfolio__container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (min-width: 500px) {
+  .portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .portfolio {
+    margin-bottom: 30px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    margin-top: 146px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .portfolio {
+    margin-top: 165px;
+    margin-bottom: 70px;
+  }
+
+  .portfolio__container {
+    column-gap: 30px;
+  }
+}
